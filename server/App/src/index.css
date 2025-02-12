@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(135deg, #1e1e2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.to-do-list {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 15px;
+    border: 2px solid rgba(204, 204, 204, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #60b1dd;
+    box-shadow: 0 0 15px rgba(96, 177, 221, 0.5);
+}
+
+ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 1;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.add-button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
+
+.delete-button {
+    background-color: #f30606;
+    box-shadow: 0 5px 15px rgba(243, 6, 6, 0.4);
+}
+
+.delete-button:hover {
+    background-color: #c20c0c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(243, 6, 6, 0.6);
+}
+
+.move-button {
+    background-color: #60b1dd;
+    box-shadow: 0 5px 15px rgba(96, 177, 221, 0.4);
+}
+
+.move-button:hover {
+    background-color: #0890da;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(96, 177, 221, 0.6);
+}
