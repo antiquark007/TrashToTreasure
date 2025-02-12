@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar">
-        <h1 className="navbar-logo">MyApp</h1>
+        <h1 className="navbar-logo">Trash Collection</h1>
         <div className="navbar-user">
           {logindata ? (
             <>
