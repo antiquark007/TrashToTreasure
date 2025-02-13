@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {NavLink, useNavigate} from 'react-router-dom';
-import "./mix.css";
+import Header from "./Header";
 
 const Login = () => {
     const [passShow,setPassShow]=useState(false);
@@ -49,6 +49,8 @@ const Login = () => {
       }
     }
   return (
+    <>
+    <Header/>
     <div>
       <section>
         <div className="form_data">
@@ -90,6 +92,7 @@ const Login = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

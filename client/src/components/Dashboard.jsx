@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "./ContextProvider/Context";
-import Homepage from "./Homepage.jsx";
+import Navbar from "./Header2/nav.jsx";
 // import Navbar from "./Navbar.jsx";
 const Dashboard = () => {
   const { logindata, setLoginData } = useContext(LoginContext);
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   return (
     <>
-    <Homepage/>
+    <Navbar />
     </>
   );
 };
