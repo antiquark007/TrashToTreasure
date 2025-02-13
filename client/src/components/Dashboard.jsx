@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "./ContextProvider/Context";
 import Homepage from "./Homepage.jsx";
-
+// import Navbar from "./Navbar.jsx";
 const Dashboard = () => {
   const { logindata, setLoginData } = useContext(LoginContext);
   const [data, setData] = useState(false);
@@ -34,9 +34,9 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
-      {data && <Homepage email={logindata.email} fname={logindata.fname} />}
-    </div>
+    <>
+    <Homepage/>
+    </>
   );
 };
 
