@@ -1,19 +1,22 @@
-import Header from "./components/Header"
+import { Routes, Route } from 'react-router-dom'
 import Login from "./components/Login"
 import Register from "./components/Register"
-import {Routes,Route} from 'react-router-dom'
 import Dashboard from "./components/Dashboard"
+import ContactPage from "./components/Pages/Contact/contact" // Changed to lowercase
 import Error from "./components/Error"
-function App() {
+import Nav from "./components/Header2/nav" // Add Nav import
 
+function App() {
   return (
     <>
-    <Routes>
-      <Route path="/" element={<Login/>}/>
-      <Route path="/register" element={<Register/>}/>
-      <Route path="/dash" element={<Dashboard/>}/>
-      <Route path="*" element={<Error/>}/>
-    </Routes>
+      {/* <Nav /> Add Nav component here */}
+      <Routes>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/dash" element={<Dashboard/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Routes>
     </>
   )
 }

@@ -1,0 +1,167 @@
+/* Fullscreen Page without Scroll */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Prevents scrolling */
+  }
+  
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .contact-page {
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/trashtotreasure.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Adjusted Overlay Size */
+  .overlay {
+    width: 90vw;
+    max-width: 1100px;
+    height: 80vh;
+    /* Adjusted for proper fit */
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title & Subtitle */
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2a4365;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Box */
+  .contact-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Left - Contact Form */
+  .form-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #2a4365;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background: #2a4365;
+    color: white;
+    padding: 18px 36px;
+    /* Increased padding for a larger button */
+    font-size: 22px;
+    /* Increased font size */
+    border: 2px solid #2a4365;
+    /* Add border to match the button's color */
+    border-radius: 12px;
+    /* More rounded corners for a modern look */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for depth */
+  }
+  
+  .submit-button:hover {
+    background: #ffcc00;
+    color: #2a4365;
+    border-color: #ffcc00;
+    /* Change border color on hover */
+    transform: scale(0.95);
+    /* Slightly shrink the button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow effect on hover */
+  }
+  
+  
+  /* Right - Customer Support */
+  .right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Increased Font Size for Support Section */
+  .support-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a4365;
+  }
+  
+  .support-text {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Stylish Contact Details */
+  .support-details {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .support-email a,
+  .support-phone a {
+    text-decoration: none;
+    color: #2a4365;
+  }
+  
+  .support-email a:hover,
+  .support-phone a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2a4365;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .title:hover {
+    color: #ffcc00;
+    /* Yellow color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+  }

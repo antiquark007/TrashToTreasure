@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom';
 import logo from './assets/logo.jpg';
 import  './navbar.css'
+import ContactPage from '../Pages/Contact/contact';
+
 function Nav() {
     return (
         <nav className="navbar">
@@ -16,7 +19,7 @@ function Nav() {
                     <li><button>Products</button></li>
                     <li><button>Shopping Cart</button></li>
                     <li><button>Testimonials</button></li>
-                    <li><button>Contacts</button></li>
+                    <li><Link to="/contact"><button>Contacts</button></Link></li>
                     {/* <li><button>Log In</button></li>
                     <li><button className="sign-up">Sign Up</button></li> */}
                 </ul>
