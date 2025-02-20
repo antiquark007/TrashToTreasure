@@ -1,75 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .navbar {
-    width: 100%;
-    background: #1e344f;
-    color: white;
-    padding: 1rem;
-    height: 120px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  
-  .logo img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .heading h1 {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links button {
-    position: relative;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links button::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s ease, left 0.3s ease;
-  }
-  
-  .nav-links button:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background: #1e344f;
+  color: white;
+  padding: 1rem;
+  height: 5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 3.125rem; 
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+
+.heading h1 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links button {
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0.125rem;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links button:hover::after {
+  width: 100%;
+  left: 0;
+}
