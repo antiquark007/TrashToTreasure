@@ -118,12 +118,6 @@ function InformationPage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-green-900 text-white py-6 mt-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>© 2024 Recycling Information Center. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

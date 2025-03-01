@@ -1,6 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const userdb = require("../models/userSchema");
+const Contact = require("../models/contactSchema"); // Import the contact schema
 const bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
 
@@ -89,6 +90,30 @@ router.get("/validuser", authenticate, async (req, res) => {
     res.status(201).json({ status: 201, ValidUserOne });
   } catch (error) {
     res.status(401).json({ status: 401, error });
+  }
+});
+
+// New route for handling contact form submission
+router.post("/contact", async (req, res) => {
+  const { name, email, phone, address, wasteType } = req.body;
+
+  if (!name || !email || !phone || !address || !wasteType) {
+    return res.status(422).json({ error: "Please fill all the fields" });
+  }
+
+  try {
+    const newContact = new Contact({
+      name,
+      email,
+      phone,
+      address,
+      wasteType,
+    });
+
+    const savedContact = await newContact.save();
+    res.status(201).json({ status: 201, savedContact });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to save contact data" });
   }
 });
 
