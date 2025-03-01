@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
-import Login from "./components/Login"
-import Register from "./components/Register"
+import Login from "./components/Registartion/Login"
+import Register from "./components/Registartion/Register"
 import Dashboard from "./components/Dashboard"
-import ContactPage from "./components/Pages/Contact/contact" // Changed to lowercase
+import Contact from "./components/contact/contact" // Changed to lowercase
 import Error from "./components/Error"
 import Nav from "./components/Header2/nav" // Add Nav import
-import InformationPage from "./components/Pages/Information/InformationPage"
+import Infopage from "./components/information Page/info"
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       {/* <Nav /> Add Nav component here */}
       <Routes>
         <Route path="/" element={<Login/>}/>
-        <Route path="/information" element={<InformationPage/>}/>
+        <Route path="/information" element={<Infopage/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/dash" element={<Dashboard/>}/>
-        <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
     </>

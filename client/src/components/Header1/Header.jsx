@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Header.css";
-import { LoginContext } from "./ContextProvider/Context";
+import { LoginContext } from "../ContextProvider/Context";
 
 const Header = () => {
   const { logindata } = useContext(LoginContext);

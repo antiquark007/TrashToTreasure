@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from './assets/logo.jpg';
 import  './navbar.css'
-import ContactPage from '../Pages/Contact/contact';
-import Dashboard from '../Dashboard';
 
 function Nav() {
     return (

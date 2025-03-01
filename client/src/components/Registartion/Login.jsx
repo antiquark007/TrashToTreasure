@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {NavLink, useNavigate} from 'react-router-dom';
-import Header from "./Header";
+import Header from "../Header1/Header";
 
 const Login = () => {
     const [passShow,setPassShow]=useState(false);
