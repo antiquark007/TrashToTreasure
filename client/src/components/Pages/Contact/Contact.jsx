@@ -11,10 +11,35 @@ export default function ContactPage() {
     wasteType: ""
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
+    // Send form data to the backend API
+    try {
+      const response = await fetch("http://localhost:5175/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (response.status === 201) {
+        console.log("Form submitted successfully:", result);
+        // Optionally, reset the form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          address: "",
+          wasteType: ""
+        });
+      } else {
+        console.error("Failed to submit form:", result);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const handleChange = (e) => {

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./Header.css";
-import InformationPage from "./Pages/InformationPage";
 import { LoginContext } from "./ContextProvider/Context";
 
 const Header = () => {

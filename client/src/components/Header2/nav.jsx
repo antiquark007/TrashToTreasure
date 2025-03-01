@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from './assets/logo.jpg';
 import  './navbar.css'
 import ContactPage from '../Pages/Contact/contact';
+import Dashboard from '../Dashboard';
 
 function Nav() {
     return (
@@ -14,8 +15,8 @@ function Nav() {
                     <h1>Trash To Treasure</h1>
                 </div>
                 <ul className="nav-links">
-                    <li><button>Home</button></li>
-                    <li><button>Services</button></li>
+                <li><Link to="/dash"><button>Home</button></Link></li>
+                <li><Link to="/information"><button>information</button></Link></li>
                     <li><button>Products</button></li>
                     <li><button>Shopping Cart</button></li>
                     <li><button>Testimonials</button></li>

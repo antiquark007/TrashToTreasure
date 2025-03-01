@@ -5,7 +5,7 @@ require('dotenv').config();
 const router=require('./routes/router')
 const cors =require("cors");
 const cookiParser=require("cookie-parser")
-const port = process.env.PORT || 8009;
+const port = process.env.PORT || 8010;
 
 app.use(express.json());//this will give the data in json type from frontend
 app.use(cookiParser());
